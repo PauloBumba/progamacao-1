@@ -1,0 +1,15 @@
+C:\Users\DELL\Downloads\progamacao-1-230403_FluxoControle\tarefa02\bin\Debug\net7.0\tarefa02.exe
+C:\Users\DELL\Downloads\progamacao-1-230403_FluxoControle\tarefa02\bin\Debug\net7.0\tarefa02.deps.json
+C:\Users\DELL\Downloads\progamacao-1-230403_FluxoControle\tarefa02\bin\Debug\net7.0\tarefa02.runtimeconfig.json
+C:\Users\DELL\Downloads\progamacao-1-230403_FluxoControle\tarefa02\bin\Debug\net7.0\tarefa02.dll
+C:\Users\DELL\Downloads\progamacao-1-230403_FluxoControle\tarefa02\bin\Debug\net7.0\tarefa02.pdb
+C:\Users\DELL\Downloads\progamacao-1-230403_FluxoControle\tarefa02\obj\Debug\net7.0\tarefa02.csproj.AssemblyReference.cache
+C:\Users\DELL\Downloads\progamacao-1-230403_FluxoControle\tarefa02\obj\Debug\net7.0\tarefa02.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DELL\Downloads\progamacao-1-230403_FluxoControle\tarefa02\obj\Debug\net7.0\tarefa02.AssemblyInfoInputs.cache
+C:\Users\DELL\Downloads\progamacao-1-230403_FluxoControle\tarefa02\obj\Debug\net7.0\tarefa02.AssemblyInfo.cs
+C:\Users\DELL\Downloads\progamacao-1-230403_FluxoControle\tarefa02\obj\Debug\net7.0\tarefa02.csproj.CoreCompileInputs.cache
+C:\Users\DELL\Downloads\progamacao-1-230403_FluxoControle\tarefa02\obj\Debug\net7.0\tarefa02.dll
+C:\Users\DELL\Downloads\progamacao-1-230403_FluxoControle\tarefa02\obj\Debug\net7.0\refint\tarefa02.dll
+C:\Users\DELL\Downloads\progamacao-1-230403_FluxoControle\tarefa02\obj\Debug\net7.0\tarefa02.pdb
+C:\Users\DELL\Downloads\progamacao-1-230403_FluxoControle\tarefa02\obj\Debug\net7.0\tarefa02.genruntimeconfig.cache
+C:\Users\DELL\Downloads\progamacao-1-230403_FluxoControle\tarefa02\obj\Debug\net7.0\ref\tarefa02.dll
