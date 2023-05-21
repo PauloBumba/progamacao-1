@@ -1,0 +1,15 @@
+C:\Users\DELL\Documents\GitHub\progamacao-1\sistemaVeterinária\bin\Debug\net7.0\sistemaVeterinária.exe
+C:\Users\DELL\Documents\GitHub\progamacao-1\sistemaVeterinária\bin\Debug\net7.0\sistemaVeterinária.deps.json
+C:\Users\DELL\Documents\GitHub\progamacao-1\sistemaVeterinária\bin\Debug\net7.0\sistemaVeterinária.runtimeconfig.json
+C:\Users\DELL\Documents\GitHub\progamacao-1\sistemaVeterinária\bin\Debug\net7.0\sistemaVeterinária.dll
+C:\Users\DELL\Documents\GitHub\progamacao-1\sistemaVeterinária\bin\Debug\net7.0\sistemaVeterinária.pdb
+C:\Users\DELL\Documents\GitHub\progamacao-1\sistemaVeterinária\obj\Debug\net7.0\sistemaVeterinária.csproj.AssemblyReference.cache
+C:\Users\DELL\Documents\GitHub\progamacao-1\sistemaVeterinária\obj\Debug\net7.0\sistemaVeterinária.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DELL\Documents\GitHub\progamacao-1\sistemaVeterinária\obj\Debug\net7.0\sistemaVeterinária.AssemblyInfoInputs.cache
+C:\Users\DELL\Documents\GitHub\progamacao-1\sistemaVeterinária\obj\Debug\net7.0\sistemaVeterinária.AssemblyInfo.cs
+C:\Users\DELL\Documents\GitHub\progamacao-1\sistemaVeterinária\obj\Debug\net7.0\sistemaVeterinária.csproj.CoreCompileInputs.cache
+C:\Users\DELL\Documents\GitHub\progamacao-1\sistemaVeterinária\obj\Debug\net7.0\sistemaVeterinária.dll
+C:\Users\DELL\Documents\GitHub\progamacao-1\sistemaVeterinária\obj\Debug\net7.0\refint\sistemaVeterinária.dll
+C:\Users\DELL\Documents\GitHub\progamacao-1\sistemaVeterinária\obj\Debug\net7.0\sistemaVeterinária.pdb
+C:\Users\DELL\Documents\GitHub\progamacao-1\sistemaVeterinária\obj\Debug\net7.0\sistemaVeterinária.genruntimeconfig.cache
+C:\Users\DELL\Documents\GitHub\progamacao-1\sistemaVeterinária\obj\Debug\net7.0\ref\sistemaVeterinária.dll
