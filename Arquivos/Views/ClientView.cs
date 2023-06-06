@@ -46,7 +46,7 @@ namespace Arquivos.Views
         private void Insert()
         {
             Client client = new Client();
-            client.Id = ;
+            client.Id = clientController.GetNextId();
 
             Console.WriteLine("Informe o seu primeiro nome:");
             client.FirstName = Console.ReadLine();
