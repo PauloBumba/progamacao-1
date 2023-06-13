@@ -21,7 +21,7 @@ namespace Arquivos.Views
         public void Init()
         {
             Console.WriteLine("************************");
-            Console.WriteLine("Você está em Clientes");
+            Console.WriteLine("Você está em Clientes!");
             Console.WriteLine("************************");
             Console.WriteLine("");
             Console.WriteLine("1 - Inserir Cliente");
@@ -31,16 +31,42 @@ namespace Arquivos.Views
             Console.WriteLine("");
 
             int option = 0;
+            option = Convert.ToInt32(Console.ReadLine());
 
-            switch(option)
+            switch (option)
             {
                 case 1:
                     Insert();
-                break;
+                    break;
+
+                case 2:
+                    List();
+                    break;
 
                 default:
-                break;
+                    break;
             }
+        }
+
+        private void List()
+        {
+            List<Client> listagem = clientController.List();
+
+            for (int i = 0; i < listagem.Count; i++)
+            {
+                Console.WriteLine(Print(listagem[i]));
+            }
+        }
+
+        private string Print(Client client)
+        {
+            string retorno = "";
+
+            retorno += $"ID: {client.Id} \n";
+            retorno += $"Nome: {client.FirstName} {client.LastName} \n";
+            retorno += "-------------------------------------------";
+
+            return retorno;
         }
 
         private void Insert()
@@ -59,6 +85,13 @@ namespace Arquivos.Views
 
             Console.WriteLine("Informe o seu email:");
             client.Email = Console.ReadLine();
+
+            bool retorno = clientController.Insert(client);
+            if (retorno)
+                Console.WriteLine("Cliente inserido com sucesso!");
+            else
+                Console.WriteLine("Falha ao inserir, verifique seus dados");
+
         }
 
     }
