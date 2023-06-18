@@ -1,0 +1,15 @@
+C:\Users\DELL\Documents\GitHub\progamacao-1\TarefaMVC\bin\Debug\net7.0\TarefaMVC.exe
+C:\Users\DELL\Documents\GitHub\progamacao-1\TarefaMVC\bin\Debug\net7.0\TarefaMVC.deps.json
+C:\Users\DELL\Documents\GitHub\progamacao-1\TarefaMVC\bin\Debug\net7.0\TarefaMVC.runtimeconfig.json
+C:\Users\DELL\Documents\GitHub\progamacao-1\TarefaMVC\bin\Debug\net7.0\TarefaMVC.dll
+C:\Users\DELL\Documents\GitHub\progamacao-1\TarefaMVC\bin\Debug\net7.0\TarefaMVC.pdb
+C:\Users\DELL\Documents\GitHub\progamacao-1\TarefaMVC\obj\Debug\net7.0\TarefaMVC.csproj.AssemblyReference.cache
+C:\Users\DELL\Documents\GitHub\progamacao-1\TarefaMVC\obj\Debug\net7.0\TarefaMVC.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DELL\Documents\GitHub\progamacao-1\TarefaMVC\obj\Debug\net7.0\TarefaMVC.AssemblyInfoInputs.cache
+C:\Users\DELL\Documents\GitHub\progamacao-1\TarefaMVC\obj\Debug\net7.0\TarefaMVC.AssemblyInfo.cs
+C:\Users\DELL\Documents\GitHub\progamacao-1\TarefaMVC\obj\Debug\net7.0\TarefaMVC.csproj.CoreCompileInputs.cache
+C:\Users\DELL\Documents\GitHub\progamacao-1\TarefaMVC\obj\Debug\net7.0\TarefaMVC.dll
+C:\Users\DELL\Documents\GitHub\progamacao-1\TarefaMVC\obj\Debug\net7.0\refint\TarefaMVC.dll
+C:\Users\DELL\Documents\GitHub\progamacao-1\TarefaMVC\obj\Debug\net7.0\TarefaMVC.pdb
+C:\Users\DELL\Documents\GitHub\progamacao-1\TarefaMVC\obj\Debug\net7.0\TarefaMVC.genruntimeconfig.cache
+C:\Users\DELL\Documents\GitHub\progamacao-1\TarefaMVC\obj\Debug\net7.0\ref\TarefaMVC.dll
