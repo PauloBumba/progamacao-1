@@ -62,7 +62,7 @@ namespace Arquivos.Controllers
             return true;
         }
 
-        private bool ImportFromTxtFile()
+        public bool ImportFromTxtFile()
         {
             try
             {
