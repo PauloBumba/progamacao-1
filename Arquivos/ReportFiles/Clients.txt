@@ -1,0 +1,3 @@
+1;00100200345;Marilson;Gonzaga;marilson.gonzaga@gmail.com
+2;12345678910;Joao ;Thomazoni;joao@gmail.com
+3;54687945628;Mauricio;Gonzatto;mauricio@gmail.com

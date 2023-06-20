@@ -43,6 +43,10 @@ namespace Arquivos.Views
                     List();
                     break;
 
+                case 3:
+                    Export();
+                    break;
+
                 default:
                     break;
             }
@@ -92,6 +96,14 @@ namespace Arquivos.Views
             else
                 Console.WriteLine("Falha ao inserir, verifique seus dados");
 
+        }
+
+        private void Export()
+        {
+            if( clientController.ExportToTextFile() )
+                Console.WriteLine("Arquivo gerado com sucesso!");
+            else
+                Console.WriteLine("Ops, algo deu errado.");
         }
 
     }
