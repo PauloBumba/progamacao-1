@@ -1,34 +1,30 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Arquivos.Controllers;
 using Arquivos.Data;
 using Arquivos.Models;
 
 namespace Arquivos.Views
 {
-  public class ClientView
+  public class MedicosView
   {
-    private ClientController clientController;
 
-    public ClientView()
+    private MedicoController medicoController;
+
+    public MedicosView()
     {
-      clientController = new ClientController();
+      medicoController = new MedicoController();
       this.Init();
     }
 
     public void Init()
     {
-      Console.WriteLine("************************");
-      Console.WriteLine("Você está em Clientes!");
-      Console.WriteLine("************************");
+      Console.WriteLine("*********************");
+      Console.WriteLine("Você está em médicos!");
+      Console.WriteLine("*********************");
       Console.WriteLine("");
-      Console.WriteLine("1 - Inserir Cliente");
-      Console.WriteLine("2 - Listar Cliente");
-      Console.WriteLine("3 - Exportar Cliente");
-      Console.WriteLine("4 - Importar Cliente");
-      Console.WriteLine("");
+      Console.WriteLine("1 - Inserir médicos");
+      Console.WriteLine("2 - Listar médicos");
+      Console.WriteLine("3 - Exportar médicos");
+      Console.WriteLine("4 - Importar médicos");
 
       int option = 0;
       option = Convert.ToInt32(Console.ReadLine());
@@ -57,7 +53,7 @@ namespace Arquivos.Views
 
     private void List()
     {
-      List<Client> listagem = clientController.List();
+      List<Medico> listagem = medicoController.List();
 
       for (int i = 0; i < listagem.Count; i++)
       {
@@ -65,37 +61,38 @@ namespace Arquivos.Views
       }
     }
 
-    private string Print(Client client)
+    private string Print(Medico medico)
     {
       string retorno = "";
 
-      retorno += $"ID: {client.Id} \n";
-      retorno += $"Nome: {client.FirstName} {client.LastName} \n";
-      retorno += "-------------------------------------------";
+      retorno += $"ID: {medico.Id} \n";
+      retorno += $"Nome: {medico.FirstName} {medico.LastName} \n";
+      retorno += $"CRM: {medico.CRM} \n";
+      retorno += "------------------------------------------- \n";
 
       return retorno;
     }
 
     private void Insert()
     {
-      Client client = new Client();
-      client.Id = clientController.GetNextId();
+      Medico medico = new Medico();
+      medico.Id = medicoController.GetNextId();
 
       Console.WriteLine("Informe o seu primeiro nome:");
-      client.FirstName = Console.ReadLine();
+      medico.FirstName = Console.ReadLine();
 
       Console.WriteLine("Informe o seu sobrenome:");
-      client.LastName = Console.ReadLine();
+      medico.LastName = Console.ReadLine();
 
       Console.WriteLine("Informe o seu CPF:");
-      client.CPF = Console.ReadLine();
+      medico.CPF = Console.ReadLine();
 
-      Console.WriteLine("Informe o seu email:");
-      client.Email = Console.ReadLine();
+      Console.WriteLine("Informe o seu CRM:");
+      medico.CRM = Console.ReadLine();
 
-      bool retorno = clientController.Insert(client);
+      bool retorno = medicoController.Insert(medico);
       if (retorno)
-        Console.WriteLine("Cliente inserido com sucesso!");
+        Console.WriteLine("Médico inserido com sucesso!");
       else
         Console.WriteLine("Falha ao inserir, verifique seus dados");
 
@@ -103,7 +100,7 @@ namespace Arquivos.Views
 
     private void Export()
     {
-      if (clientController.ExportToTextFile())
+      if (medicoController.ExportToTextFile())
         Console.WriteLine("Arquivo gerado com sucesso!");
       else
         Console.WriteLine("Ops, algo deu errado.");
@@ -111,7 +108,7 @@ namespace Arquivos.Views
 
     private void Import()
     {
-      if (clientController.ImportFromTxtFile())
+      if (medicoController.ImportFromTxtFile())
         Console.WriteLine("Dados importados com sucesso!");
       else
         Console.WriteLine("Ops, algo deu errado.");

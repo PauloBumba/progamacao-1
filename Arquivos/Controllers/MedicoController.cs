@@ -1,31 +1,36 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using System.IO;
 using Arquivos.Data;
 using Arquivos.Models;
 
 namespace Arquivos.Controllers
 {
-  public class AnimalController
+  public class MedicoController
   {
-
     private string directoryName = "ReportFiles";
-    private string fileName = "Animals.txt";
+    private string fileName = "Medicos.txt";
 
-    public List<Animal> List()
+    public List<Medico> List()
     {
-      return DataSet.Animals;
+      return DataSet.Medicos;
     }
 
-    public bool Insert(Animal animal)
+    // "BOOL" é oque ela vai retornar, nesse caso, true ou false
+    public bool Insert(Medico medico)
     {
-      if (animal == null)
+      if (medico == null)
         return false;
 
-      if (animal.Id <= 0)
+      if (medico.Id <= 0)
         return false;
 
-      if (string.IsNullOrWhiteSpace(animal.Name))
+      if (string.IsNullOrWhiteSpace(medico.FirstName))
         return false;
 
-      DataSet.Animals.Add(animal);
+      DataSet.Medicos.Add(medico);
       return true;
     }
 
@@ -35,9 +40,9 @@ namespace Arquivos.Controllers
         Directory.CreateDirectory(directoryName);
 
       string fileContent = string.Empty;
-      foreach (Animal animal in DataSet.Animals)
+      foreach (Medico medico in DataSet.Medicos)
       {
-        fileContent += $"{animal.Id};{animal.Name};{animal.Raca};{animal.Tipo}";
+        fileContent += $"{medico.Id};{medico.FirstName};{medico.LastName};{medico.CPF};{medico.CRM}";
         fileContent += "\n";
       }
 
@@ -68,14 +73,15 @@ namespace Arquivos.Controllers
 
         while (line != null)
         {
-          Animal animal = new Animal();
-          string[] animalData = line.Split(';');
-          animal.Id = Convert.ToInt32(animalData[0]);
-          animal.Name = animalData[1];
-          animal.Raca = animalData[2];
-          animal.Tipo = animalData[3];
+          Medico medico = new Medico();
+          string[] medicoData = line.Split(';');
+          medico.Id = Convert.ToInt32(medicoData[0]);
+          medico.CPF = medicoData[1];
+          medico.FirstName = medicoData[2];
+          medico.LastName = medicoData[3];
+          medico.CRM = medicoData[4];
 
-          DataSet.Animals.Add(animal);
+          DataSet.Medicos.Add(medico);
 
           line = sr.ReadLine();
 
@@ -92,13 +98,12 @@ namespace Arquivos.Controllers
 
     }
 
-
     public int GetNextId()
     {
-      int tam = DataSet.Animals.Count;
+      int tam = DataSet.Medicos.Count;
 
       if (tam > 0)
-        return DataSet.Animals[tam - 1].Id + 1;
+        return DataSet.Medicos[tam - 1].Id + 1;
       else
         return 1;
 
