@@ -25,12 +25,18 @@ namespace Arquivos.Views
       Console.WriteLine("2 - Listar médicos");
       Console.WriteLine("3 - Exportar médicos");
       Console.WriteLine("4 - Importar médicos");
+      Console.WriteLine("5 - Pesquisar médicos");
+      Console.WriteLine("");
+      Console.WriteLine("0 - Voltar");
 
       int option = 0;
       option = Convert.ToInt32(Console.ReadLine());
 
       switch (option)
       {
+        case 0:
+          break;
+
         case 1:
           Insert();
           break;
@@ -42,11 +48,17 @@ namespace Arquivos.Views
         case 3:
           Export();
           break;
+
         case 4:
           Import();
           break;
 
+        case 5:
+          SearchByName();
+          break;
+
         default:
+          Console.WriteLine("Opção inválida, tente novamente.");
           break;
       }
     }
@@ -113,5 +125,18 @@ namespace Arquivos.Views
       else
         Console.WriteLine("Ops, algo deu errado.");
     }
+
+     private void SearchByName()
+        {
+            Console.WriteLine("Pesquisar médico pelo nome.");
+            Console.WriteLine("Digite o nome:");
+            string name = Console.ReadLine();
+
+            foreach (Medico m in medicoController.SearchByName(name))
+            {
+                Console.WriteLine(m.ToString());
+            }
+
+        }
   }
 }

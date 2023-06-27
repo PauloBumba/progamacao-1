@@ -43,5 +43,42 @@ namespace Arquivos.Utils
                 }
             );
         }
-    }
+
+        public static void ChargeDoctors()
+        {
+            DataSet.Medicos.Add(
+                new Medico
+                {
+                    Id = 1,
+                    FirstName = "Jeferson",
+                    LastName = "de melo",
+                    CPF = "000.000.000-11",
+                    CRM = "1254"
+                }
+            );
+
+            DataSet.Medicos.Add(
+                new Medico
+                {
+                    Id = 2,
+                    FirstName = "Claudemar",
+                    LastName = "Pereira",
+                    CPF = "123.000.000-15",
+                    CRM = "5463"
+                }
+            );
+
+             DataSet.Medicos.Add(
+                new Medico
+                {
+                    Id = 3,
+                    FirstName = "Gabriel",
+                    LastName = "Barbosa",
+                    CPF = "123.000.000-20",
+                    CRM = "2465"
+                }
+            );
+        }
+    }   
+
 }

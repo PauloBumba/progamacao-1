@@ -3,6 +3,7 @@ using Arquivos.Utils;
 // Programa para leitura de dados de pessoas e exportação em arquivo .txt
 
 Bootstrapper.ChargeClients();
+Bootstrapper.ChargeDoctors();
 
 int option = 0;
 do
