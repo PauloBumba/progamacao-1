@@ -41,6 +41,12 @@ namespace Arquivos.Models
     }//Fim do escopo deste método
      //() Delimitam os parametros, {} chaves delimitam as instruções, o escopo
 
+    public string FullName => $"{this.FirstName} {this.LastName}";
+
+    public override string ToString()
+    {
+      return $"Id: {this.Id}; Name: {this.FullName}";
+    }
   } //Fim do escopo da classe
 
 } // Fim do escopo do namespace
