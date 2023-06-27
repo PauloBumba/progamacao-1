@@ -27,5 +27,10 @@ namespace Arquivos.Models
       Tipo = tipo;
       Raca = raca;
     }
+
+    public override string ToString()
+    {
+      return $"Id: {this.Id}; Nome: {this.Name}; Tipo: {this.Tipo}";
+    }
   }
 }

@@ -99,23 +99,23 @@ namespace Arquivos.Controllers
     }
 
     public List<Medico> SearchByName(string name)
+    {
+      if (string.IsNullOrEmpty(name) ||
+          string.IsNullOrWhiteSpace(name))
+        return null;
+
+      List<Medico> medicos = new List<Medico>();
+      for (int i = 0; i < DataSet.Medicos.Count; i++)
+      {
+        var m = DataSet.Medicos[i];
+        if (m.FullName.ToLower().Contains(name.ToLower()))
         {
-            if (string.IsNullOrEmpty(name) || 
-                string.IsNullOrWhiteSpace(name) )
-                return null;
-
-            List<Medico> medicos = new List<Medico>();
-            for(int i = 0; i < DataSet.Medicos.Count; i++)
-            {
-              var m = DataSet.Medicos[i];
-              if (m.FullName.ToLower().Contains(name.ToLower()))
-              {
-                medicos.Add(m);
-              }
-            }
-
-            return medicos;
+          medicos.Add(m);
         }
+      }
+
+      return medicos;
+    }
     public int GetNextId()
     {
       int tam = DataSet.Medicos.Count;

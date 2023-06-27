@@ -34,7 +34,7 @@ namespace Arquivos.Models
 
     public override string ToString()
     {
-      return $"Id: {this.Id}; Name: {this.FullName}";
+      return $"Id: {this.Id}; Name: {this.FullName}; CRM: {this.CRM}";
     }
   }
 }

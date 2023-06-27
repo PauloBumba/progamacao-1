@@ -4,6 +4,7 @@ using Arquivos.Utils;
 
 Bootstrapper.ChargeClients();
 Bootstrapper.ChargeDoctors();
+Bootstrapper.ChargeAnimals();
 
 int option = 0;
 do

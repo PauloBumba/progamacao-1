@@ -25,13 +25,18 @@ namespace Arquivos.Views
       Console.WriteLine("2 - Listar Animais");
       Console.WriteLine("3 - Exportar Animais");
       Console.WriteLine("4 - Importar Animais");
+      Console.WriteLine("5 - Pesquisar Animais");
       Console.WriteLine("");
+      Console.WriteLine("0 - Voltar");
 
       int option = 0;
       option = Convert.ToInt32(Console.ReadLine());
 
       switch (option)
       {
+        case 0:
+          break;
+
         case 1:
           Insert();
           break;
@@ -48,8 +53,12 @@ namespace Arquivos.Views
           Import();
           break;
 
+        case 5:
+          SearchByName();
+          break;
 
         default:
+          Console.WriteLine("Opção inválida, tente novamente.");
           break;
       }
 
@@ -113,6 +122,19 @@ namespace Arquivos.Views
         Console.WriteLine("Dados importados com sucesso!");
       else
         Console.WriteLine("Ops, algo deu errado.");
+    }
+
+    private void SearchByName()
+    {
+      Console.WriteLine("Pesquisar animal pelo nome.");
+      Console.WriteLine("Digite o nome:");
+      string name = Console.ReadLine();
+
+      foreach (Animal a in animalController.SearchByName(name))
+      {
+        Console.WriteLine(a.ToString());
+      }
+
     }
   }
 }

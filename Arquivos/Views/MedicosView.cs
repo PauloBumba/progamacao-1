@@ -126,17 +126,17 @@ namespace Arquivos.Views
         Console.WriteLine("Ops, algo deu errado.");
     }
 
-     private void SearchByName()
-        {
-            Console.WriteLine("Pesquisar médico pelo nome.");
-            Console.WriteLine("Digite o nome:");
-            string name = Console.ReadLine();
+    private void SearchByName()
+    {
+      Console.WriteLine("Pesquisar médico pelo nome.");
+      Console.WriteLine("Digite o nome:");
+      string name = Console.ReadLine();
 
-            foreach (Medico m in medicoController.SearchByName(name))
-            {
-                Console.WriteLine(m.ToString());
-            }
+      foreach (Medico m in medicoController.SearchByName(name))
+      {
+        Console.WriteLine(m.ToString());
+      }
 
-        }
+    }
   }
 }
